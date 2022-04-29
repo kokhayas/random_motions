@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.button {
+	appearance: none;
+	border: 0;
+	border-radius: 5px;
+	background: #4676D7;
+	color: #fff;
+	padding: 8px 16px;
+	font-size: 20px;
+}
+
+div .motion{
+	white-space: pre-wrap;
+	text-align: left;
+	margin: 1rem;
+	padding: 1rem;
+	border-radius: 2%;
+	border: solid orange;
+	line-height: 1.35rem;
+
+}
+
+.copy {
+	margin: 1rem;
+	padding: 0.3rem;
+}
+
+.title{
+	color: lightskyblue;
+	line-height: 1.35rem;
+}
