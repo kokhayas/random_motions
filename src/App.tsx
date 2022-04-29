@@ -4,6 +4,7 @@ import './App.css';
 import international from './internationalText.json';
 import national from './nationalText.json';
 // import useHistory from 'react-router-dom';
+import pic from "./utdslogo.png";
 
 interface AppProps {}
 
@@ -55,19 +56,22 @@ function App({}: AppProps) {
   // Return the App component.
   return (
     <div className="App">
-		<h3 className="title">the University of Tokyo   UTDS</h3>
+		<img src={pic} alt="picture"/>
+		{/* <h3 className="title">the University of Tokyo   UTDS</h3> */}
 		<div>
+			<button className="backward" onClick = {handleNationalBackwardClick}>戻る</button>
 			<button className="button" onClick={handleNationalClick}>national motion</button>
 			<button className="copy" onClick={() => copy(national[nationalMotion])}>Copy</button>
-			<button className="backward" onClick = {handleNationalBackwardClick}>戻る</button>
+			{/* <button className="backward" onClick = {handleNationalBackwardClick}>戻る</button> */}
 			<div className="motion">{national[nationalMotion]}</div>
-			</div>
+		</div>
 		<div>
+			<button className="backward" onClick = {handleInternationalBackwardClick}>戻る</button>
 			<button className="button" onClick={handleInternationalClick}>international motion</button>
 			<button className="copy" onClick={() => copy(national[nationalMotion])}>Copy</button>
-			<button className="backward" onClick = {handleInternationalBackwardClick}>戻る</button>
 			<div className="motion">{international[internationalMotion]}</div>
 		</div>
+		<p>486 national motions and 306 international motions collected by utds. free to use.</p>
     </div>
   );
 }
