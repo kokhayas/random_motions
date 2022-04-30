@@ -68,7 +68,7 @@ function App({}: AppProps) {
 		<div>
 			<button className="backward" onClick = {handleInternationalBackwardClick}>戻る</button>
 			<button className="button" onClick={handleInternationalClick}>international motion</button>
-			<button className="copy" onClick={() => copy(national[nationalMotion])}>Copy</button>
+			<button className="copy" onClick={() => copy(international[internationalMotion])}>Copy</button>
 			<div className="motion">{international[internationalMotion]}</div>
 		</div>
 		<p>486 national motions and 306 international motions collected by utds. free to use.</p>
